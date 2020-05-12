@@ -1,0 +1,39 @@
+/* Aula inicial :D */
+body {
+  background-image: url('https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png');
+  background-size: auto 100vh;
+  font-family: Roboto;
+  height: 100vh;
+}
+
+.menu {
+  background-color: #7e5cdb;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-title, 
+.site-subtitle {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.site-subtitle {
+  font-style: italic;
+}
