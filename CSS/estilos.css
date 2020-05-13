@@ -1,13 +1,55 @@
-/* Aula inicial :D */
+/* Resetando as margens padroes que sao aplicadas automaticamente
+pelo brwser. o aterisco chama todas os elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url('https://coolbackgrounds.io/images/backgrounds/index/sea-edge-79ab30e2.png');
   background-size: auto 100vh;
-  font-family: Roboto;
+  font-family: "Share Tech Mono", Arial, monospace;
   height: 100vh;
+  font-size: 14px;
+}
+
+/* Se a tela tiver pelo menos 400 pixels de largura estes estilos serão carregados*/
+@media (min-width: 400px) {
+  body{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 600px) {
+  body{
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body{
+    font-size: 20px;
+  }
+}
+
+header{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu {
   background-color: #7e5cdb;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+.menu a{
+  display: block;
+  padding: 10px 20px;
 }
 
 .menu li {
@@ -34,6 +76,15 @@ a:hover {
   text-align: center;
 }
 
+.site-title {
+  font-size: 4em;
+}
+
 .site-subtitle {
   font-style: italic;
+}
+
+.img-portfolio {
+  height: 300px;
+  width: 300px;
 }
