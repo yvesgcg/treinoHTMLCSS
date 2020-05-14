@@ -16,24 +16,24 @@ body {
 
 /* Se a tela tiver pelo menos 400 pixels de largura estes estilos serão carregados*/
 @media (min-width: 400px) {
-  body{
+  body {
     font-size: 16px;
   }
 }
 
 @media (min-width: 600px) {
-  body{
+  body {
     font-size: 18px;
   }
 }
 
 @media (min-width: 1200px) {
-  body{
+  body {
     font-size: 20px;
   }
 }
 
-header{
+header {
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -47,7 +47,7 @@ header{
   top: 0;
 }
 
-.menu a{
+.menu a {
   display: block;
   padding: 10px 20px;
 }
@@ -78,13 +78,65 @@ a:hover {
 
 .site-title {
   font-size: 4em;
+  font-family: 'Caveat', cursive;
 }
 
 .site-subtitle {
   font-style: italic;
 }
 
+.portfolio {
+  height: 100vh;
+}
+
+.portfolio h2 {
+  color: whitesmoke;
+  background-color: #7e5cdb;
+}
+
+.portfolio .grid {
+  display: grid;
+  gap: 2em;
+  padding: 2em;
+}
+
+@media (min-width:560px) {
+  .portfolio .grid {
+    grid-template-columns: 240px 240px;
+    justify-content: center;
+  }
+}
+
+@media (min-width:860px) {
+  .portfolio .grid {
+    align-content: center;
+    grid-template-columns: 240px 240px 240px;
+    height: calc(100vh - 8em - 48px);
+  }
+}
+
+@media (min-width:860px) {
+  .portfolio .grid {
+    grid-template-columns: 360px 360px 360px;
+  }
+}
+
+.portfolio figure {
+  text-align: center;
+}
+
 .img-portfolio {
-  height: 300px;
-  width: 300px;
+  height: 180px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+}
+
+@media (min-width:1200px){
+  .img-portfolio {
+    height: auto;
+    width: 100%;
+  }
+
 }
