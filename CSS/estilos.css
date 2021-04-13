@@ -1,5 +1,5 @@
 /* Resetando as margens padroes que sao aplicadas automaticamente
-pelo brwser. o aterisco chama todas os elementos */
+pelo browser. o aterisco chama todas os elementos */
 * {
   margin: 0;
   padding: 0;
